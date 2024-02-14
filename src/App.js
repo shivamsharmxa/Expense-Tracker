@@ -6,6 +6,7 @@ import './App.css';
 
 function App() {
   return (
+    <div className="app">
     <Router> {/* Use Router instead of Routes here */}
       <Routes>
         <Route path='/' element={<Login />} />
@@ -13,6 +14,7 @@ function App() {
         {/* Chat index page */}
       </Routes>
     </Router>
+    </div>
   );
 }
 

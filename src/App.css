@@ -1,16 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
 
-.App {
-  min-height: 100vh;
-  display: flex;
-  background-image: url('./components/authentication/ExpenseTraker.png');
-  background-size: cover;
-  background-position: center;
-  color: black;
-  background-color: black;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
-.div {
-  display: block;
+.app {
+  min-height: 100vh; /* Minimum height to fill the viewport height */
+  width: 100%; /* Full width */
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  background-image: url('./components/authentication/ExpenseTraker.png'); /* Path to your image */
+  background-size: cover; /* Cover the entire area of the element */
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  color: black; /* Text color */
+  background-color: black; /* Fallback background color */
+  background-attachment: fixed; /* Optional: Fixes the background */
 }
 
+/* Media queries for responsive adjustments */
+@media (max-width: 768px) {
+  .app {
+    background-position: center center;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    background-position: center center;
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .app {
+    background-image: url('./components/authentication/ExpenseTraker.png'); /* Path to your higher resolution image for retina displays */
+  }
+}

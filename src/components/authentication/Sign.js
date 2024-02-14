@@ -3,10 +3,22 @@ import { Button } from '@chakra-ui/button';
 import { FormControl, FormLabel } from '@chakra-ui/form-control';
 import { Input, InputGroup, InputRightElement } from '@chakra-ui/input';
 import { VStack, Center, Container, Text } from '@chakra-ui/layout';
+import { Box } from '@chakra-ui/react';
 
 
 const Sign = () => {
   return (
+    <Box
+      position="absolute"
+      width="36%"
+      top="50%"
+      left="81%"
+      transform="translate(-50%, -50%)"
+      backgroundColor="transparent"
+      p="4"
+      borderRadius="md" // Add border radius for styling
+      boxShadow="md" // Add a box shadow for styling
+    >
     <Center h="100vh">
       <Container maxW="container.sm" textAlign="center">
         <Text fontSize="2xl" fontWeight="bold" mb="6">
@@ -50,6 +62,7 @@ const Sign = () => {
         </VStack>
       </Container>
     </Center>
+    </Box>
   );
 }
 
