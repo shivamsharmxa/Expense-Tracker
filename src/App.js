@@ -1,7 +1,7 @@
 import React from "react";
 import './App.css';
-import Graph from "./components/authentication/charts/Graph";
-import Form from "./components/authentication/charts/Form";
+import Graph from "./components/charts/Graph";
+import Form from "./components/charts/Form";
 
 
 
