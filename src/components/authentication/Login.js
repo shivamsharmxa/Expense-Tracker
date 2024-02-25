@@ -45,7 +45,7 @@ const Login = () => {
           <InputGroup size="md">
             <Input
               type={showPassword ? 'text' : 'password'}
-              placeholder="Enter Password"
+              placeholder="Enter Password Please"
               color={'white'}
             />
             <InputRightElement width="4.5rem">
