@@ -1,6 +1,6 @@
 // const app = require("express")();
 import express, { Application } from "express";
-import Server from "./backend/src/app";
+import Server from "./src/app";
 import { PrismaClient } from "@prisma/client";
 import dotenv from "dotenv";
 
